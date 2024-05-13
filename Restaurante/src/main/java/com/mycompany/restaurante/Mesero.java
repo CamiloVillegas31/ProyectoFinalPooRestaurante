@@ -10,4 +10,17 @@ public class Mesero {
     public String nameWaiter;        //Nombre del mesero
     public String IdWaiter;          //Identificador Mesero
     
+
+
+
+
+
+
+ public void TomarPedido(){
+
 }
+
+
+}
+
+
