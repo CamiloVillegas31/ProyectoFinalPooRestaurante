@@ -6,4 +6,7 @@ public class Personas {
     public String namePersonal;   //Nombre del trabajador
     public String idPersonal;     //Identificador del trabajador
     public String rolPersonal;    //Se encarga de definir el cargo(Rol) del trabajador
+    
+    
+   String [] arrayRoles = {"ADMIN","CAJA","MESAS","COCINA"};   //creamos los roles disponibles
 }
