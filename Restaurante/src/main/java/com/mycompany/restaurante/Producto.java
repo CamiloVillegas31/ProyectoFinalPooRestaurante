@@ -32,9 +32,19 @@ public class Producto {
         this.valor = valor;
     }
     
+    //Método to String
+    
      @Override
     public String toString() {
-        return "Nombre: " + producto + ", Edad: " + valor;
+        return "Producto: " + producto + "\n Precio: " + valor;
+    }
+
+    String getNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    String getPrecio() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     
