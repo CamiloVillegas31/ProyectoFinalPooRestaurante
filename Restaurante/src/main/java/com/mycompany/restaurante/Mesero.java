@@ -5,10 +5,9 @@
 package com.mycompany.restaurante;
 
 
-public class Mesero {
+public class Mesero extends Personas {
     
-    public String nameWaiter;        //Nombre del mesero
-    public String IdWaiter;          //Identificador Mesero
+
     
 
 

@@ -4,9 +4,15 @@
 
 package com.mycompany.restaurante;
 
+import java.util.ArrayList;
+
 public class Restaurante {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       
+        Carta micarta = new Carta();
+        micarta.mostrarProductos(String tipo, ArrayList<Producto> productos);
+        
+        
     }
 }
