@@ -11,6 +11,7 @@ public class Restaurante {
 
     public static void main(String[] args) {
         
+   /*     
     //Creamos una instancia de la clase Scanner
         Scanner teclado = new Scanner(System.in);
         
@@ -34,6 +35,10 @@ public class Restaurante {
         } else {
             System.out.println("Nombre de usuario o contraseña incorrectos.\n Intente nuevamente.");
         }
-        
+ */
+        jrfmLogin objLogin = new jrfmLogin();
+        objLogin.setVisible(true);
+   
     }
+
 }
