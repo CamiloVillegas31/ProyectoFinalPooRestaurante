@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package com.mycompany.restaurante;
 
-/**
- *
- * @author User
- */
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
+
 public class jrfmLogin extends javax.swing.JFrame {
 
     /**
@@ -107,6 +104,32 @@ public class jrfmLogin extends javax.swing.JFrame {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
+        
+        // Obtener la lista de usuarios
+        ArrayList<Usuarios> listaUsuarios = Usuarios.obtenerUsuarios();
+        
+        // Crear una instancia de VerificacionUsuarios
+        VerificacionUsuarios validacionUser = new VerificacionUsuarios(listaUsuarios);
+        
+        
+        String userName = txtNameUser.getText();
+        char [] passChar = txtUserPass.getPassword();
+        String userPass = new String(passChar);
+     
+        // Verificar las credenciales del usuario
+    boolean autenticado = validacionUser.verificar(userName, userPass);
+    
+    // Mostrar el resultado de la autenticación
+    if (autenticado) {
+        JOptionPane.showMessageDialog(this, "Autenticación exitosa. Bienvenido, " + userName + ".");
+        // Aquí podrías cargar otra parte de la aplicación o mostrar un nuevo JFrame
+    } else {
+        JOptionPane.showMessageDialog(this, "Nombre de usuario o contraseña incorrectos. Intente nuevamente.", "Error de Autenticación", JOptionPane.ERROR_MESSAGE);
+    }
+    
+        
+        
+        
     }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
